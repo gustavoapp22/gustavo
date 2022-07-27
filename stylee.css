@@ -1,0 +1,138 @@
+
+.nav{
+    height: 80px;
+    display: flex;
+    padding: 0.5rem 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+} 
+.header{
+    min-height: 100vh;
+    background-image: url('../gustavo-otra-vez/image-header.jpg');
+    background-repeat: no-repeat ;
+    background-position: center bottom;
+    
+}
+.nav--menu::after{
+    content: " ";
+    display: block;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    border-right: 15px solid #fff;
+    border-left: 15px solid transparent;
+    position: absolute;
+     right: 0%;
+     top: -30px;
+
+}
+.input-menu:checked ~ .nav--menu{
+    display: block;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+
+}
+body{
+    font-family: 'barlow', sans-serif;
+}
+.input-menu{
+    display: none;  /*para pcultar el cuadradito*/
+}
+.nav--menu{
+    list-style: none;
+    position: absolute;
+    background-color: #fff;
+    width: calc(100% - 3rem);
+    right: 1.5rem;
+    top: 105px;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+    
+}
+
+.section__abaut{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(50vh, auto);
+
+}
+
+
+
+
+.sectio--article__img-yellow{
+    background-image: url('../machu-picchu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.sectio--article__img-pink{
+    background-image: url('../HD-Wallpaper-Pictures-hd-walpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.section--article-info{
+    padding: 2.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--very-dark-grayish-blue);
+
+}
+.section--ticle{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    color: black;
+    font-size: 1.75rem;
+}
+.section--link{
+    font-family: 'Fraunces', serif;
+    font-weight: bold;
+    color: black;
+    text-transform: ;
+}
+.section--link::after{
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    margin: -8px auto 0 auto;
+}
+.section--link__yellow::after{
+    background: var(--yellow);
+}
+.section--link__pink::after{
+    background-color: var(--soft-red);
+}
+
+.section-clients{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-clients--article{
+    min-height: 50vh;
+}
+
+
+
+
+.img{
+  grid-auto-rows: 400px, 15rem;
+}
+
